@@ -5,6 +5,9 @@
 class marathon::install {
   package { 'marathon':
     ensure  => $::marathon::version,
-    require => Class['java8']
+    require => [
+      Package['oracle-java8-installer'],
+      Package['mesos']
+    ]
   }
 }

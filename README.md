@@ -2,7 +2,8 @@
 
 Requires:
 
- * https://github.com/Spantree/puppet-java8
+ * oracle-java8-installer package
+ * mesos package
  * puppetlabs-apt
 
 Usage:
