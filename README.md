@@ -2,7 +2,7 @@
 
 Requires:
 
- * https://github.com/roobert/puppet-java8
+ * https://github.com/Spantree/puppet-java8
  * puppetlabs-apt
 
 Usage:
