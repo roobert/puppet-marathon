@@ -10,6 +10,6 @@ class marathon::service {
   }
 
   exec { 'marathon-consul-callback':
-    command => 'curl localhost:8080/v2/eventSubscriptions?callbackUrl=http://172.17.42.1:4000'
+    command => '/opt/puppetlabs/puppet/bin/curl localhost:8080/v2/eventSubscriptions?callbackUrl=http://172.17.42.1:4000'
   }
 }
