@@ -10,4 +10,12 @@ class marathon::install {
       Package['mesos']
     ]
   }
+
+  file { '/etc/marathon/conf':
+    ensure => directory
+  }
+
+  file { '/etc/marathon/conf/event_subscriber':
+    content => 'http_callback'
+  }
 }
